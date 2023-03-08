@@ -12,7 +12,13 @@ def encode(pwrd):
 
 
 def decode(pwrd):
-    pass
+    decoded_pwrd = ''
+
+    for n in pwrd:
+        num = (int(n) - 3) % 10
+        decoded_pwrd += str(num)
+
+    return decoded_pwrd
 
 
 # User input menu
@@ -40,7 +46,8 @@ def main():
             print()
 
         if option == 2:
-            pass
+            print(f'The encoded password is {encrypted_pwrd}, and the original password is {pwrd}.')
+            print() 
 
     # option 3 to exit the program
     exit()
