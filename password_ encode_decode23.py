@@ -38,7 +38,7 @@ def main():
         print_menu()
         option = int(input('Please enter an option: '))
 
-        # entering and encrypting a user password
+        # entering and encrypting user password
         if option == 1:
             pwrd = input('Please enter your password to encode: ')
             encrypted_pwrd = encode(pwrd)
